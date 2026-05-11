@@ -2,10 +2,10 @@ import pandas as pd
 from langchain.schema import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
 
 # ---- Load Dataset ----
-df = pd.read_csv("D:\OneDrive - Coforge Limited\Documents\Capstone-2\CustomerSupport_RAG&Agents_StreamlitApp\data\customer_support_tickets.csv")
+df = pd.read_csv("data/customer_support_tickets.csv")
 
 # ---- Fill Missing ----
 df = df.fillna("Unknown")
