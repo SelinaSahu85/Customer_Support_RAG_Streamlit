@@ -60,7 +60,7 @@ jobs:
 
     - run: |
 
-        docker tag medical-rag ${{ secrets.DOCKER_USERNAME }}/medical-rag:latest
+        docker tag customer-support-rag ${{ secrets.DOCKER_USERNAME }}/customer-support-rag:latest
 
         docker push ${{ secrets.DOCKER_USERNAME }}/medical-rag:latest
  
