@@ -46,7 +46,7 @@ jobs:
 
       run: |
 
-        docker build -t medical-rag .
+        docker build -t customer-support-rag .
  
     - name: Push to DockerHub
 
@@ -62,5 +62,5 @@ jobs:
 
         docker tag customer-support-rag ${{ secrets.DOCKER_USERNAME }}/customer-support-rag:latest
 
-        docker push ${{ secrets.DOCKER_USERNAME }}/medical-rag:latest
+        docker push ${{ secrets.DOCKER_USERNAME }}/customer-support-rag:latest
  
